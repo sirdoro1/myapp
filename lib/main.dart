@@ -22,8 +22,8 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.red[600],
         centerTitle: true,
       ),
-      body: Center(
-        child: TextButton(
+      body: Column(children: <Widget>[
+        TextButton(
             onPressed: () {
               print('Click Me button was clicked');
             },
@@ -48,29 +48,24 @@ class MyApp extends StatelessWidget {
                     fontSize: 15,
                     color: Colors.white,
                   )),
-            )
-            // child: Text('Click Me',
-            //     style: TextStyle(
-            //       fontSize: 15,
-            //       color: Colors.white,
-            //     )),
-            // style: ElevatedButton.styleFrom(
-            //   backgroundColor: Colors.red[600],
-            //   shadowColor: Color.fromARGB(255, 227, 144, 35),
-            //   shape: RoundedRectangleBorder(
-            //     borderRadius: BorderRadius.circular(10.0),
-            //   ),
-            //   minimumSize: Size(100, 20),
-            // ),
-            ),
-      ),
-      floatingActionButton: FloatingActionButton(
-          child: const Icon(
-            Icons.add,
-            color: Colors.white,
-          ),
-          onPressed: () {},
-          backgroundColor: Colors.red[600]),
+            )),
+        const Text('Hello World'),
+        Container(
+          height: 100,
+          width: 200,
+          color: Colors.blue,
+          padding: const EdgeInsets.all(20.0),
+          child: const Text('Inside Container'),
+          margin: const EdgeInsets.all(2.0),
+        ),
+      ]),
+      // floatingActionButton: FloatingActionButton(
+      //     child: const Icon(
+      //       Icons.add,
+      //       color: Colors.white,
+      //     ),
+      //     onPressed: () {},
+      //     backgroundColor: Colors.red[600]),
     );
   }
 }
