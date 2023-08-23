@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           'MyApp',
           style: TextStyle(
             fontSize: 20,
@@ -31,19 +31,19 @@ class MyApp extends StatelessWidget {
               onPressed: () {
                 print('Message button was clicked');
               },
-              icon: Icon(
+              icon: const Icon(
                 Icons.mail,
                 color: Colors.white,
               ),
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.red[600],
-                shadowColor: Color.fromARGB(255, 227, 144, 35),
+                shadowColor: const Color.fromARGB(255, 227, 144, 35),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(10.0),
                 ),
-                minimumSize: Size(100, 40),
+                minimumSize: const Size(100, 40),
               ),
-              label: Text('Message',
+              label: const Text('Message',
                   style: TextStyle(
                     fontSize: 15,
                     color: Colors.white,
@@ -65,7 +65,7 @@ class MyApp extends StatelessWidget {
             ),
       ),
       floatingActionButton: FloatingActionButton(
-          child: Icon(
+          child: const Icon(
             Icons.add,
             color: Colors.white,
           ),
