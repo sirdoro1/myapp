@@ -15,37 +15,44 @@ class Home extends StatelessWidget {
       backgroundColor: Colors.red[600], 
       centerTitle: true,
     ),
-    body: Column(
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: <Widget>[
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: <Widget>[
-            const Text('Hello World!'),
-            ElevatedButton(
-              onPressed: () {
-                  print('You clicked me');
-              },
-              child: const Text('Click me'),
+    body: Row(
+      children: [
+        Expanded(
+          flex:2,
+          child: Image.asset('images/bmw-1.jpg')
+        ),
+        Expanded(
+          flex:2,
+          child: Container(
+            padding: const EdgeInsets.all(20.0),
+            color: Colors.cyan,
+            child: const Text('Hello 1'),
+          ),
+        ),
+        Expanded(
+          flex:2,
+          child: Container(
+              padding: const EdgeInsets.all(20.0),
+              color: Colors.pinkAccent,
+              child: const Text('Hello 2'),
             ),
-          ],
         ),
-        Container(
-          padding: const EdgeInsets.all(50.0),
-          color: Colors.cyan,
-          child: const Text('One'),
-        ),
-        Container(
-          padding: const EdgeInsets.all(50.0),
-          color: Colors.pinkAccent,
-          child: const Text('Two'),
-        ),
-        Container(
-          padding: const EdgeInsets.all(50.0),
-          color: Colors.amber,
-          child: const Text('Three'),
-        ),
+        // Expanded(
+        //   flex:2,
+        //   child: Container(
+        //     padding: const EdgeInsets.all(20.0),
+        //       color: Colors.amberAccent,
+        //       child: const Text('Hello 3'),
+        //   ),
+        // ),
+        //  Expanded(
+        //     flex:2,
+        //     child: Container(
+        //       padding: const EdgeInsets.all(20.0),
+        //       color: Colors.purpleAccent,
+        //       child: const Text('Hello 4'),
+        //     ),
+        //   ),
       ],
     ),
       floatingActionButton: FloatingActionButton(
