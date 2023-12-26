@@ -15,10 +15,21 @@ class Home extends StatelessWidget {
       backgroundColor: Colors.red[600], 
       centerTitle: true,
     ),
-    body: const Center(
-      child: Image(
-        image: AssetImage('images/bmw-2.jpg'),
-      )
+    body: Row(
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      crossAxisAlignment: CrossAxisAlignment.center,
+      children: <Widget>[
+        const Text('Hello World'),
+        ElevatedButton(
+          onPressed: (){}, 
+          child: const Text('Click Me'),
+        ),
+        Container(
+          color: Colors.cyan,
+          padding: const EdgeInsets.all(30.0),
+          child: const Text('Inside Container'),
+        ),
+      ],  
     ),
       floatingActionButton: FloatingActionButton(
       onPressed: () {},
