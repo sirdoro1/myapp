@@ -16,12 +16,10 @@ class Home extends StatelessWidget {
       centerTitle: true,
     ),
     body: const Center(
-      child:Icon(
-        Icons.airport_shuttle,
-        color: Colors.lightBlue,
-        size: 50.0,
+      child: Image(
+        image: AssetImage('images/bmw-2.jpg'),
       )
-      ), 
+    ),
       floatingActionButton: FloatingActionButton(
       onPressed: () {},
       backgroundColor: Colors.red[600],
